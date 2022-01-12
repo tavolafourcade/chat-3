@@ -4,9 +4,9 @@ export const ChatContext = createContext()
 const ChatProvider = (props) => {
     const saludo = 'Hola desde Chat'
     return (
-        <ChatProvider.Provider value={{saludo}}>
+        <ChatContext.Provider value={{saludo}}>
             {props.children}
-        </ChatProvider.Provider>
+        </ChatContext.Provider>
     )
 }
 
