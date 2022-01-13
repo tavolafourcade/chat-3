@@ -3,11 +3,11 @@ import { ChatContext } from './context/ChatProvider'
 import Navbar from './components/Navbar'
 
 const App = () => {
-    const { saludo } = useContext(ChatContext)
+    const { usuario } = useContext(ChatContext)
     return (
         <div>
             <Navbar/>
-            Chat {saludo}
+            Chat
         </div>
     )
 }
